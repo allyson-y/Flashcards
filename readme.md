@@ -3,7 +3,7 @@ Flashcards
 ## Lab 1
 
 ### App Description
-Lab 1 of the Flashcards app adds a front and back side of a flashcard, as well as a tap gesture recognizer that flips the flashcard to the answer side when the card is tapped.
+Lab 1 of the Flashcards app adds a front and back side of a flashcard, as well as a tap gesture recognizer that flips the flashcard to the answer side when the card is tapped
 
 ### App Walk-though
 

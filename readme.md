@@ -7,7 +7,7 @@ Lab 1 of the Flashcards app adds a front and back side of a flashcard, as well a
 
 ### App Walk-though
 
-<img src="https://imgur.com/sYEAcGz" width=200><br>
+![](https://imgur.com/sYEAcGz)
 
 ## Required
 - [x] Create New Project in Xcode

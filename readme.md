@@ -1,7 +1,5 @@
 Flashcards
 
-📝 `NOTE:` Paste the README templates for each subsequent lab here at the top, (i.e. lab 2, 3, 4). This will show a history of your development process including which users stories you completed and how your app looked and functioned at each step.
-
 ## Lab 1
 
 ### App Description
@@ -9,7 +7,7 @@ Lab 1 of the Flashcards app adds a front and back side of a flashcard, as well a
 
 ### App Walk-though
 
-<img src=https://www.dropbox.com/s/p5qtbku6kjlwzvj/flashcardslab1.gif?dl=0 width=200><br>
+<img src=flashcardslab1.gif width=200><br>
 
 
 ## Required

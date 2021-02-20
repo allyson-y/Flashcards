@@ -7,9 +7,7 @@ Lab 1 of the Flashcards app adds a front and back side of a flashcard, as well a
 
 ### App Walk-though
 
-<img src=flashcardslab1.gif width=200><br>
-
-(flashcardslab1.gif)
+<img src=file:///Users/allysonyao/Documents/My%20Documents/Research:Internships%2020-21/CodePath/Flashcards/flashcardslab1.gif width=200><br>
 
 ## Required
 - [x] Create New Project in Xcode

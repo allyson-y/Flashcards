@@ -9,6 +9,7 @@ Lab 1 of the Flashcards app adds a front and back side of a flashcard, as well a
 
 <img src=flashcardslab1.gif width=200><br>
 
+(flashcardslab1.gif)
 
 ## Required
 - [x] Create New Project in Xcode

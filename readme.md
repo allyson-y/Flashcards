@@ -1,5 +1,27 @@
 Flashcards
 
+## Lab 2
+
+### App Description
+Lab 2 of the Flashcards app adds features where users can create new flashcards and edit their flashcards from the app. It also implements adding a new screen and passing data from one screen to another.
+
+### App Walk-though
+
+<img src="https://raw.githubusercontent.com/allyson-y/Flashcards/main/flashcardslab2.gif" width=200><br>
+
+`TODO://` In the User stories section below, add an `x` between the `-[ ]` like this `- [x]` for any user story you complete. (☝️ Remove this paragraph after after checking off user stories)
+
+## Required
+- [ x ] User can open the creation screen
+- [ x ] User can cancel out of the creation screen
+- [ x ] User can enter a new question and answer in the creation screen to then show it on the flashcard
+- [ x ] Push code to GitHub
+## Optional
+- [ x ] User gets an error if they try to create a new flashcard with no question or answer
+- [ x ] User can edit existing flashcard
+- [ ] User can add multiple choice answers in the creation screen
+
+
 ## Lab 1
 
 ### App Description

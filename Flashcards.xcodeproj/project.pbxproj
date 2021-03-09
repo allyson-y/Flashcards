@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3E9AAC8125F40E5C0001BC47 /* CreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E9AAC8025F40E5C0001BC47 /* CreationViewController.swift */; };
 		3EC492A825E1948C00EB97BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC492A725E1948C00EB97BF /* AppDelegate.swift */; };
 		3EC492AA25E1948C00EB97BF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC492A925E1948C00EB97BF /* SceneDelegate.swift */; };
 		3EC492AC25E1948C00EB97BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3EC492AB25E1948C00EB97BF /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3E9AAC8025F40E5C0001BC47 /* CreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreationViewController.swift; sourceTree = "<group>"; };
 		3EC492A425E1948C00EB97BF /* Flashcards.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Flashcards.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3EC492A725E1948C00EB97BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3EC492A925E1948C00EB97BF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3E9AAC8525F413EA0001BC47 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3EC492AB25E1948C00EB97BF /* ViewController.swift */,
+				3E9AAC8025F40E5C0001BC47 /* CreationViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		3EC4929B25E1948C00EB97BF = {
 			isa = PBXGroup;
 			children = (
@@ -99,9 +110,9 @@
 		3EC492A625E1948C00EB97BF /* Flashcards */ = {
 			isa = PBXGroup;
 			children = (
+				3E9AAC8525F413EA0001BC47 /* ViewControllers */,
 				3EC492A725E1948C00EB97BF /* AppDelegate.swift */,
 				3EC492A925E1948C00EB97BF /* SceneDelegate.swift */,
-				3EC492AB25E1948C00EB97BF /* ViewController.swift */,
 				3EC492AD25E1948C00EB97BF /* Main.storyboard */,
 				3EC492B025E1948F00EB97BF /* Assets.xcassets */,
 				3EC492B225E1948F00EB97BF /* LaunchScreen.storyboard */,
@@ -261,6 +272,7 @@
 				3EC492AC25E1948C00EB97BF /* ViewController.swift in Sources */,
 				3EC492A825E1948C00EB97BF /* AppDelegate.swift in Sources */,
 				3EC492AA25E1948C00EB97BF /* SceneDelegate.swift in Sources */,
+				3E9AAC8125F40E5C0001BC47 /* CreationViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

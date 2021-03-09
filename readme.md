@@ -9,8 +9,6 @@ Lab 2 of the Flashcards app adds features where users can create new flashcards 
 
 <img src="https://raw.githubusercontent.com/allyson-y/Flashcards/main/flashcardslab2.gif" width=200><br>
 
-`TODO://` In the User stories section below, add an `x` between the `-[ ]` like this `- [x]` for any user story you complete. (☝️ Remove this paragraph after after checking off user stories)
-
 ## Required
 - [ x ] User can open the creation screen
 - [ x ] User can cancel out of the creation screen

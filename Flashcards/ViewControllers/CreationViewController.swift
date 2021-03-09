@@ -18,6 +18,7 @@ class CreationViewController: UIViewController {
     @IBOutlet weak var answerTextField: UITextField!
     
     var initialQuestion: String?
+    
     var initialAnswer: String?
     
     override func viewDidLoad() {

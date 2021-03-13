@@ -32,17 +32,16 @@ class CreationViewController: UIViewController {
     
     @IBAction func didTapOnCancel(_ sender: Any) {
         dismiss(animated: true)
+        
     }
     
     @IBAction func didTapOnDone(_ sender: Any) {
         
         // Get the text in the question text field
         let questionText:String! = questionTextField.text
-        print("question")
         
         // Get the text in the answer text field
         let answerText:String! = answerTextField.text
-        print("answer")
         
         // Check if empty
         if questionText == nil || answerText == nil || questionText!.isEmpty || answerText!.isEmpty {
@@ -52,8 +51,15 @@ class CreationViewController: UIViewController {
             alert.addAction(okAction)
             self.present(alert, animated: true)
         } else {
+            
+            // See if it's existing
+            var isExisting = false
+            if initialQuestion != nil {
+                isExisting = true
+            }
+            
             // Call the function to update the flashcard
-            flashcardsController.updateFlashcard(question: questionText!, answer: answerText!)
+            flashcardsController.updateFlashcard(question: questionText!, answer: answerText!, isExisting: isExisting)
             
             //Dismiss
             dismiss(animated: true)

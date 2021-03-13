@@ -1,5 +1,23 @@
 Flashcards
 
+## Lab 3
+
+### App Description
+Lab 3 of the Flashcards app adds features where users can save created cards from other users so that users can revisit the app to review their cards. It also implements a delete button, so the user can delete flashcards.
+
+### App Walk-though
+
+<img src="https://github.com/allyson-y/Flashcards/blob/main/flashcardslab3.gif" width=200><br>
+
+## Required
+- [ x ] User can browse through multiple flashcards
+- [ x ] User can re-open the app and see previously created flashcards
+- [ x ] Push code to GitHub
+## Optional
+- [ x ] User can delete a flashcard
+- [ x ] User can edit existing flashcard
+- [ ] User can store multiple choice questions
+
 ## Lab 2
 
 ### App Description

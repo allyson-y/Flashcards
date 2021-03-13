@@ -3,7 +3,7 @@ Flashcards
 ## Lab 3
 
 ### App Description
-Lab 3 of the Flashcards app adds features where users can save created cards from other users so that users can revisit the app to review their cards. It also implements a delete button, so the user can delete flashcards.
+Lab 3 of the Flashcards app adds features where users can save created cards from other users so that users can revisit the app to review their cards. It also implements a delete button, so the user can delete flashcards. 
 
 ### App Walk-though
 

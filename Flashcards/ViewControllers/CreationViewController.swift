@@ -63,6 +63,7 @@ class CreationViewController: UIViewController {
             
             //Dismiss
             dismiss(animated: true)
+            
         }
     }
 }

@@ -162,10 +162,8 @@ class ViewController: UIViewController {
         let flashcard = Flashcard(question: question, answer: answer)
         
         if isExisting {
-            
             // Replace existing flashcard
             flashcards[currentIndex] = flashcard
-            
         } else {
             
             // Adding flashcard in the flashcards array

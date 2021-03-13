@@ -15,7 +15,7 @@ class CreationViewController: UIViewController {
     @IBOutlet weak var questionTextField: UITextField!
     
     // Get the text in the answer text field
-    @IBOutlet weak var answerTextField: UITextField!
+    @IBOutlet weak var answerTextField: UITextField! 
     
     var initialQuestion: String?
     

@@ -8,8 +8,10 @@
 import UIKit
 
 struct Flashcard {
+    
     var question: String
     var answer: String
+    
 }
 
 class ViewController: UIViewController {

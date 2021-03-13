@@ -15,7 +15,7 @@ class CreationViewController: UIViewController {
     @IBOutlet weak var questionTextField: UITextField!
     
     // Get the text in the answer text field
-    @IBOutlet weak var answerTextField: UITextField! 
+    @IBOutlet weak var answerTextField: UITextField!
     
     var initialQuestion: String?
     
@@ -51,7 +51,6 @@ class CreationViewController: UIViewController {
             alert.addAction(okAction)
             self.present(alert, animated: true)
         } else {
-            
             // See if it's existing
             var isExisting = false
             if initialQuestion != nil {
@@ -63,7 +62,6 @@ class CreationViewController: UIViewController {
             
             //Dismiss
             dismiss(animated: true)
-            
         }
     }
 }

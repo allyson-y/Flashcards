@@ -22,6 +22,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var nextButton: UIButton!
     
+    @IBOutlet weak var card: UIView!
+    
     // Array to hold our flashcards
     var flashcards = [Flashcard]()
     
@@ -31,6 +33,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        // rounded corners
+        backLabel.layer.cornerRadius = 20.0
+        frontLabel.layer.cornerRadius = 20.0
+        card.layer.cornerRadius = 20.0
+        card.clipsToBounds = false
+        backLabel.clipsToBounds = true
+        frontLabel.clipsToBounds = true
+        
+        // shadow
+        card.layer.shadowRadius = 15.0
+        card.layer.shadowOpacity = 0.2
         
         // Read saved flashcards
         readSavedFlashcards()
@@ -43,12 +57,84 @@ class ViewController: UIViewController {
             updateNextPrevButton()
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        // First start with the flashcard invisible and slightly smaller in size
+        card.alpha = 0.0
+        card.transform = CGAffineTransform.identity.scaledBy(x: 0.75, y: 0.75)
+        
+        // Animation
+        UIView.animate(withDuration: 0.6, delay: 0.5, usingSpringWithDamping: 0.5, initialSpringVelocity: 0.5, options: []) {
+            self.card.alpha = 1.0
+            self.card.transform = CGAffineTransform.identity
+        }
+
+    }
 
     @IBAction func didTapOnFlashcard(_ sender: Any) {
-        if (frontLabel.isHidden) {
-            frontLabel.isHidden = false
-        } else {
-            frontLabel.isHidden = true
+        flipFlashcard()
+    }
+    
+    func flipFlashcard() {
+        UIView.transition(with: card, duration: 0.3, options: .transitionFlipFromRight) {
+            if (self.frontLabel.isHidden) {
+                self.frontLabel.isHidden = false
+            } else {
+                self.frontLabel.isHidden = true
+            }
+        }
+    }
+    
+    func animateCardOutNext() {
+        
+        // Animate card going left
+        UIView.animate(withDuration: 0.2) {
+            self.card.transform = CGAffineTransform.identity.translatedBy(x: -300.0, y: 0.0)
+        } completion: { finished in
+            
+            // Update labels
+            self.updateLabels()
+            
+            // Run other animation
+            self.animateCardInNext()
+        }
+    }
+    
+    func animateCardInNext() {
+        
+        // Start on the right side (don't animate this)
+        card.transform = CGAffineTransform.identity.translatedBy(x: 300.0, y: 0.0)
+        
+        // Animate card going back to its original position
+        UIView.animate(withDuration: 0.2) {
+            self.card.transform = CGAffineTransform.identity
+        }
+    }
+    
+    func animateCardOutPrev() {
+        
+        // Animate card going right
+        UIView.animate(withDuration: 0.2) {
+            self.card.transform = CGAffineTransform.identity.translatedBy(x: 300.0, y: 0.0)
+        } completion: { finished in
+            
+            // Update labels
+            self.updateLabels()
+            
+            // Run other animation
+            self.animateCardInPrev()
+        }
+    }
+    
+    func animateCardInPrev() {
+        // Start on the left side (don't animate this)
+        card.transform = CGAffineTransform.identity.translatedBy(x: -300.0, y: 0.0)
+        
+        // Animate card going back to its original position
+        UIView.animate(withDuration: 0.2) {
+            self.card.transform = CGAffineTransform.identity
         }
     }
     
@@ -57,11 +143,10 @@ class ViewController: UIViewController {
         // Decrease current index
         currentIndex = currentIndex - 1
         
-        // Update labels
-        updateLabels()
-        
         // Update buttons
         updateNextPrevButton()
+        
+        animateCardOutPrev()
     }
     
     @IBAction func didTapOnNext(_ sender: Any) {
@@ -69,11 +154,10 @@ class ViewController: UIViewController {
         //Increase current index
         currentIndex = currentIndex + 1
         
-        // Update labels
-        updateLabels()
-        
         // Update buttons
         updateNextPrevButton()
+        
+        animateCardOutNext()
     }
     
     @IBAction func didTapOnDelete(_ sender: Any) {
